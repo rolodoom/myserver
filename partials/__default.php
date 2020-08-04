@@ -30,7 +30,7 @@
 
     foreach($myarray as $key):
         
-        if( $key != '01-Development' ):
+        if( $key != '01-Development' and  $key != '02-Archive' ):
 
             // para sub categorias
             $mysubarray = array();
@@ -79,7 +79,11 @@
 <div class="row">
     <?php foreach($mysubarray as $keysubarray): ?>
     
+    <?php if($key == '01-Development'): ?>
     <div class="col-md-4 col-lg-4 col-xl-3 p-4 text-center">
+    <?php else: ?>
+    <div class="col-md-4 col-lg-3 col-xl-2 p-4 text-center">
+    <?php endif; ?>
 
         <div class="card">
 
