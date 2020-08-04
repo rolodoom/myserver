@@ -1,6 +1,4 @@
 
-
-
 <footer class="text-muted">
     <div class="container-fluid p-3 p-md-5">
         <ul class="list-inline">
@@ -14,9 +12,3 @@
             Based on <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>. Icons from <a href="https://fontawesome.com" target="_blank">Font Awesome</a>. Theme by <a href="https://github.com/thomaspark/bootswatch" target="_blank">Bootswatch</a>.</p>
     </div>
 </footer>
-
-    <script src="myserver/node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script type="module" src="myserver/assets/js/starter.js"></script>
-
-</body>
-</html>

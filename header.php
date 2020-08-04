@@ -1,20 +1,3 @@
-<?php
-    include_once('myserver/includes/inc.functions.php');
-?><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="myserver/assets/css/style.min.css">
-    <title>RoLo Server</title>
-
-
-    <?php require_once('includes/inc.favicons.php'); ?>
-
-</head>
-<body>
-
-
 
     <header class="navbar navbar-expand navbar-dark bg-dark flex-column flex-md-row fixed-top">
         <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
