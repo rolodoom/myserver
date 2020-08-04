@@ -9,6 +9,9 @@
         </ul>
         <p>
             Code released under the MIT License.<br>
-            Based on <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>. Icons from <a href="https://fontawesome.com" target="_blank">Font Awesome</a>. Theme by <a href="https://github.com/thomaspark/bootswatch" target="_blank">Bootswatch</a>.</p>
+            Based on <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>. Icons from <a href="https://fontawesome.com" target="_blank">Font Awesome</a>. Theme by <a href="https://github.com/thomaspark/bootswatch" target="_blank">Bootswatch</a>.
+        </p>
+
+        
     </div>
 </footer>
