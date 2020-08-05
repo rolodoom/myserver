@@ -67,9 +67,9 @@
             </a>
             <div class="card-body">
                 <p class="card-text d-flex justify-content-between">
-                    <a href="<?php echo sprintf( '%s/%s' , $key , $keysubarray ); ?>" class="btn btn btn-outline-primary">Front</a>
+                    <a href="<?php echo sprintf( '%s/%s' , $key , $keysubarray ); ?>" class="btn btn btn-outline-primary"><i class="fa fa-home"></i> Front</a>
                     <?php $dir=sprintf('%s/%s/public_html/wp-admin/',$key,$keysubarray); if(is_dir($dir)): ?>
-                    <a href="<?php echo $dir; ?>" class="btn btn btn-outline-primary">Admin</a>
+                    <a href="<?php echo $dir; ?>" class="btn btn btn-outline-primary"><i class="fa fa-lock"></i> Admin</a>
                     <?php endif; ?>
                 </p>
             </div>
@@ -107,7 +107,24 @@
                 <h3 class="text-center p-3 bg-dark text-primary"><?php echo $key; ?></h3>
                 <div class="list-group list-group-flush">
                     <?php foreach($mysubarray as $keysubarray): ?>
-                    <a href="<?php echo sprintf('%s/%s', $key, $keysubarray); ?>" class="list-group-item list-group-item-action"><i class="fa fa-chevron-right"></i> <?php echo $keysubarray; ?></a>
+                    <?php 
+                        switch($keysubarray){
+                            case 'WORDPRESS':  
+                                    $__icon_class__ = 'fab fa-wordpress';
+                                    break;
+                            case 'PYTHON':  
+                                    $__icon_class__ = 'fab fa-python';
+                                    break;
+                            case 'JOOMLA':  
+                                    $__icon_class__ = 'fab fa-joomla';
+                                    break;
+
+                            default:
+                                    $__icon_class__ = 'fa fa-chevron-right';
+                                    break;
+                        }
+                    ?>
+                    <a href="<?php echo sprintf('%s/%s', $key, $keysubarray); ?>" class="list-group-item list-group-item-action"><i class="<?php echo $__icon_class__; ?>"></i> <?php echo $keysubarray; ?></a>
                     <?php endforeach; ?>
                 </div>
             </div>
