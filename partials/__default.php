@@ -13,7 +13,8 @@
 
     $dir = ".";
 	$cont=0;
-	$myarray = array();
+    $myarray = array();
+
 	$ignoreList = array('cgi-bin', '.', '..', '._', $__myserverDir__ );
     if ($directory = opendir($dir)) {
         while (false !== ($filename = readdir($directory))) {
@@ -29,40 +30,10 @@
     $str = '';
 
     foreach($myarray as $key):
+
+        if( $key == '01-Development' or  $key == '02-Archive' ):
         
-        if( $key != '01-Development' and  $key != '02-Archive' ):
-
-            // para sub categorias
-            $mysubarray = array();
-
-            $str .= '<h1 class="text-center">'.$key.'</h1>';
-            
-            $check = (strpos(strtolower($key), 'downloads') !== false) ? true: false;
-            if($check){
-                $str .= '<li><i class="fa-li fa fa-chevron-right"></i><a href="'.$key.'">HTTrack</a></li>';
-                $str = '<ul class="fa-ul">'.$str.'</ul>';
-            }else{
-                if ($directory = opendir($key)) {
-                    while (false !== ($filename = readdir($directory))) {
-                        if (!in_array($filename, $ignoreList) and substr($filename, 0, 1) != '.') {
-                            array_push($mysubarray, $filename);								
-                        }
-                    }
-                }
-                sort($mysubarray);
-                foreach($mysubarray as $keysubarray){
-                    $str .= '<li><i class="fa-li fa fa-chevron-right"></i><a href="'.$key.'/'.$keysubarray.'">'.$keysubarray.'</a></li>';
-                }	
-                $str = '<ul class="fa-ul">'.$str.'</ul>';
-            }
-                        
-            echo $str;
-            $str='';
-        else:
-    ?>
-
-<?php
-
+        
             $mysubarray = array();
             if ($directory = opendir($key)) {
                 while (false !== ($filename = readdir($directory))) {
@@ -101,16 +72,45 @@
         
     </div>
     <?php endforeach; ?>
-</div>
+</div><!-- ./row -->
+
+<div class="p-2 mb-5"></div>
+
+        <?php endif; ?>
+    <?php endforeach; ?>
 
 
-    <?php
 
-        endif; 
-    endforeach;
+    <div class="row">
 
+    <?php foreach($myarray as $key): ?>
+        <?php
+            if( $key != '01-Development' and  $key != '02-Archive' ):
+                $mysubarray = array();
+                if ($directory = opendir($key)) {
+                    while (false !== ($filename = readdir($directory))) {
+                        if (!in_array($filename, $ignoreList) and substr($filename, 0, 1) != '.') {
+                            array_push($mysubarray, $filename);								
+                        }
+                    }
+                }
+                sort($mysubarray);
+        ?>
+        
+        <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="border border-dark mt-3 mb-3 mt-xl-0">
+                <h3 class="text-center p-3 bg-dark text-primary"><?php echo $key; ?></h3>
+                <div class="list-group list-group-flush">
+                    <?php foreach($mysubarray as $keysubarray): ?>
+                    <a href="<?php echo sprintf('%s/%s', $key, $keysubarray); ?>" class="list-group-item list-group-item-action"><i class="fa fa-chevron-right"></i> <?php echo $keysubarray; ?></a>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
 
+        <?php endif; ?>
+    <?php endforeach; ?>
 
-?>
+    </div><!-- ./row -->
 
-</div>
+</div><!-- ./container-fluid -->

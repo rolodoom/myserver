@@ -24,7 +24,7 @@ include_once('myserver/footer.php');
 
 
     <script src="myserver/node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script type="module" src="myserver/assets/js/starter.js"></script>
+    <script type="module" src="myserver/assets/js/app.js"></script>
 
 </body>
 </html>
