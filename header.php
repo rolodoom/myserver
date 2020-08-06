@@ -8,6 +8,14 @@
             <ul class="navbar-nav bd-navbar-nav flex-row">
                 <li class="nav-item"><a href="/phpmyadmin" class="nav-link"><i class="fa fa-database"></i> phpMyAdmin</a></li>
                 <li class="nav-item"><a href="/public/?page=phpinfo" class="nav-link"><i class="fa fa-info-circle"></i> phpinfo</a></li>
+                <li class="nav-item dropdown">
+                <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="drop-bootstrap" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-paint-brush"></i> Templates
+                </a>
+                <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="drop-bootstrap">
+                    <a class="dropdown-item" href="?page=htmlwptheme"><i class="fab fa-wordpress"></i>  Wordpress</a>
+                </div>
+            </li>
             </ul>
         </div>
 
