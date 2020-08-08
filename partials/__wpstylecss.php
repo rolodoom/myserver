@@ -4,7 +4,7 @@
 
         <h1><i class="fa fa-file-code mr-2"></i>style.css</h1>
 
-        <pre><code class="language-css">/*
+        <pre><code class="language-scss">/*
 Theme Name: Theme Name
 Theme URI: http://www.themeurl.com
 Author: Author Name

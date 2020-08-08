@@ -27,6 +27,7 @@
                 <li><i class="fa fa-file-code mr-2"></i><a href="?page=wpstylecss">style.css</a></li>
                 <li><i class="fa fa-file-code mr-2"></i><a href="?page=wpindex">index.php</a></li>
                 <li><i class="fas fa-file-image mr-2"></i><a href="?page=wpscreenshot">screenshot.png</a> (*.jpg)</li>
+                <li><i class="fa fa-file-code mr-2"></i><a href="?page=wppackagejson">package.json</a></li>
                 <li><i class="fa fa-file-code mr-2"></i>functions.php</li>
                 <li><i class="fa fa-file-code mr-2"></i>header.php</li>
                 <li><i class="fa fa-file-code mr-2"></i>footer.php</li>
@@ -39,7 +40,10 @@
                 <li><i class="fa fa-folder mr-2"></i>includes/classes/</li>
                 <li><i class="fa fa-folder mr-2"></i>includes/classes/<a href="?page=wpCommentsWalkerClass">CommentsWalkerClass.php</a></li>
                 <li><i class="fa fa-folder mr-2"></i>partials/</li>
+                <li><i class="fa fa-folder mr-2"></i>partials/post/</li>
+                <li><i class="fa fa-folder mr-2"></i>partials/post/<a href="?page=wppartialspostcontent">content.php</a></li>
                 <li><i class="fa fa-folder mr-2"></i>scss/</li>
+                <li><i class="fa fa-folder mr-2"></i>scss/<a href="?page=wpstylescss">style.scss</a></li>
                 <li><i class="fa fa-folder mr-2"></i>assets/</li>
             </ol>
         </div>

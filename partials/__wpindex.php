@@ -16,15 +16,50 @@
 
 &lt;h1&gt;&lt;?php bloginfo( 'name' ); ?&gt;&lt;/h1&gt;
 &lt;h2&gt;&lt;?php bloginfo( 'description' ); ?&gt;&lt;/h2&gt;
+
+&lt;?php if( is_category()): ?&gt;
+    &lt;h1&gt;&lt;?php _e('Category:', 'textdomain');?&gt; &lt;?php single_cat_title(); ?&gt;&lt;/h1&gt;
+&lt;?php elseif( is_tag()): ?&gt;
+    &lt;h1&gt;&lt;?php _e('Tag:', 'textdomain');?&gt; &lt;?php single_tag_title(); ?&gt;&lt;/h1&gt;
+&lt;?php elseif( is_search() ): ?&gt;
+    &lt;h1&gt;&lt;?php _e('Search results for:', 'textdomain');?&gt; &lt;?php the_search_query(); ?&gt;&lt;/h1&gt;
+&lt;?php elseif( is_day() ): ?&gt;
+    &lt;h1&gt;&lt;?php _e('Archive:', 'textdomain');?&gt; &lt;?php the_time( get_option('date_format')); ?&gt;&lt;/h1&gt;
+&lt;?php elseif( is_month() ): ?&gt;
+    &lt;h1&gt;&lt;?php _e('Archive:', 'textdomain');?&gt; &lt;?php the_time('F Y'); ?&gt;&lt;/h1&gt;
+&lt;?php elseif( is_year() ): ?&gt;
+    &lt;h1&gt;&lt;?php _e('Archive:', 'textdomain');?&gt; &lt;?php the_time('Y'); ?&gt;&lt;/h1&gt;
+&lt;?php elseif( is_author() ): ?&gt;
+    &lt;h1&gt;
+    &lt;?php _e('Written by:', 'textdomain');?&gt; 
+    &lt;?php $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));?&gt;
+    &lt;?php echo $curauth-&gt;display_name; ?&gt;
+    &lt;/h1&gt;
+&lt;?php elseif( is_404() ): ?&gt;
+    &lt;h1&gt;&lt;?php _e('Page not found', 'textdomain');?&gt;&lt;/h1&gt;
+&lt;?php elseif( is_home()): ?&gt;
+    &lt;?php if(is_front_page()):?&gt;
+    &lt;h1&gt;&lt;?php _e('Blog', 'textdomain');?&gt;&lt;/h1&gt;
+    &lt;?php else: ?&gt;
+        &lt;h1&gt;&lt;?php bloginfo( 'name' ); ?&gt;&lt;/h1&gt;
+        &lt;h2&gt;&lt;?php bloginfo( 'description' ); ?&gt;&lt;/h2&gt;
+    &lt;?php endif; ?&gt;
+&lt;?php else: ?&gt;
+    &lt;h1&gt;&lt;?php bloginfo( 'name' ); ?&gt;&lt;/h1&gt;
+    &lt;h2&gt;&lt;?php bloginfo( 'description' ); ?&gt;&lt;/h2&gt;
+&lt;?php endif; ?&gt;
  
 &lt;?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?&gt;
  
+&lt;?php //get_template_part( 'partials/post/content', 'excerpt' ); ?&gt;
+
+&lt;!-- content.php--&gt;
 &lt;h3&gt;&lt;?php the_title(); ?&gt;&lt;/h3&gt;
- 
 &lt;?php the_content(); ?&gt;
 &lt;?php wp_link_pages(); ?&gt;
 &lt;?php edit_post_link(); ?&gt;
- 
+&lt;!-- ./content.php--&gt;
+
 &lt;?php endwhile; ?&gt;
  
 &lt;?php
