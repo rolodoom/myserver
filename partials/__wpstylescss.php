@@ -4,6 +4,15 @@
 
         <h1><i class="fa fa-file-code mr-2"></i>style.scss</h1>
 
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Theme</li>
+                <li class="breadcrumb-item">scss</li>
+                <li class="breadcrumb-item active" aria-current="page">style.scss</li>
+            </ol>
+        </nav>
+
+
         <pre><code class="language-css">// Colors
 @import &quot;_utilities/colors&quot;;
 

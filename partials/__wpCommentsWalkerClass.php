@@ -4,6 +4,16 @@
 
         <h1><i class="fa fa-file-code mr-2"></i>CommentsWalkerClass.php</h1>
 
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Theme</li>
+                <li class="breadcrumb-item">includes</li>
+                <li class="breadcrumb-item">classes</li>
+                <li class="breadcrumb-item active" aria-current="page">CommentsWalkerClass.php</li>
+            </ol>
+        </nav>
+
+
         <pre><code class="language-php">&lt;?php
 /**
  * Custom comment walker for this theme.

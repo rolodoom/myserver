@@ -4,6 +4,14 @@
 
         <h1><i class="fa fa-file-code mr-2"></i>package.json</h1>
 
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Theme</li>
+                <li class="breadcrumb-item active" aria-current="page">package.json</li>
+            </ol>
+        </nav>
+
+
         <pre><code class="language-javascript">{
   &quot;name&quot;: &quot;textdomain&quot;,
   &quot;version&quot;: &quot;1.0.0&quot;,

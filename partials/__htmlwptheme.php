@@ -34,9 +34,14 @@
                 <li><i class="fa fa-file-code mr-2"></i>single.php</li>
                 <li><i class="fa fa-file-code mr-2"></i>page.php</li>
                 <li><i class="fa fa-file-code mr-2"></i>front-page.php</li>
+                <li><i class="fa fa-file-code mr-2"></i><a href="?page=wptemplatepage">template-page.php</a></li>
                 <li><i class="fa fa-file-code mr-2"></i><a href="?page=wpcomments">comments.php</a></li>
                 <li><i class="fa fa-file-code mr-2"></i><a href="?page=wpsearchform">searchform.php</a></li>
                 <li><i class="fa fa-folder mr-2"></i>includes/</li>
+                <li><i class="fa fa-folder mr-2"></i>includes/<a href="?page=wpsetup">setup.php</a></li>
+                <li><i class="fa fa-folder mr-2"></i>includes/<a href="?page=wpcustomposttype">custom-post-type.php</a></li>
+                <li><i class="fa fa-folder mr-2"></i>includes/<a href="?page=wpcustomtaxonomy">custom-taxonomy.php</a></li>
+                <li><i class="fa fa-folder mr-2"></i>includes/<a href="?page=wpthemecustomizer">theme-customizer.php</a></li>
                 <li><i class="fa fa-folder mr-2"></i>includes/classes/</li>
                 <li><i class="fa fa-folder mr-2"></i>includes/classes/<a href="?page=wpCommentsWalkerClass">CommentsWalkerClass.php</a></li>
                 <li><i class="fa fa-folder mr-2"></i>partials/</li>
