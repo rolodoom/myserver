@@ -21,7 +21,7 @@ function get_project_thumbnail( $path ){
 
     $filenamepng = $path . 'screenshot.png';
     $filenamejpg = $path . 'screenshot.jpg';
-    $defaultimg = '//placehold.it/1300x900';
+    $defaultimg = '//placehold.it/1200x900';
     
     if (file_exists($filenamepng)) {
         $thumbnail = $filenamepng ;
