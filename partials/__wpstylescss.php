@@ -13,7 +13,7 @@
         </nav>
 
 
-        <pre><code class="language-css">// Colors
+        <pre><code class="language-scss">// Colors
 @import &quot;_utilities/colors&quot;;
 
 // Bootstrap

@@ -6,19 +6,27 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "bootstrap",
+    "sass",
+    "css",
+    "javascript",
+    "starter",
+    "template"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rolodoom/myserver.git"
   },
   "author": "RoLo",
-  "license": "MIT",
+  "license": "GPL-2.0-or-later",
   "bugs": {
     "url": "https://github.com/rolodoom/myserver/issues"
   },
   "homepage": "https://github.com/rolodoom/myserver#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
-    "bootstrap": "^4.5.1",
+    "bootstrap": "^4.5.0",
     "jquery": "^3.5.1"
   }
 }

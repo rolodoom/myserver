@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="myserver/assets/css/style.min.css">
-    <link rel="stylesheet" href="myserver/assets/css/prism.css">
+    <link rel="stylesheet" href="myserver/assets/css/prism.min.css">
     <title>RoLo Server</title>
 
 
@@ -24,8 +24,7 @@ include_once('myserver/footer.php');
 ?>
 
 
-    <script src="myserver/node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script type="module" src="myserver/assets/js/app.js"></script>
+    <script type="module" src="myserver/assets/js/main.js"></script>
 
 </body>
 </html>
