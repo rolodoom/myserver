@@ -36,10 +36,10 @@
 
             <li class="nav-item dropdown">
                 <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="drop-wordpress" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fab fa-wordpress"></i> v5.4.2
+                    <i class="fab fa-wordpress"></i> v5.5
                 </a>
                 <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="drop-wordpress">
-                    <a class="dropdown-item" href="https://es.wordpress.org/download/" target="_blank">Latest (5.4.2)</a>
+                    <a class="dropdown-item" href="https://es.wordpress.org/download/" target="_blank">Latest (5.5)</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="https://developer.wordpress.org/" target="_blank">Developer Resources</a>
                     <a class="dropdown-item" href="https://developer.wordpress.org/themes/basics/template-hierarchy/#visual-overview" target="_blank">Template Herarchy</a>
@@ -61,7 +61,7 @@
             
         </ul>
 
-        <a class="btn btn-outline-primary d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://es.wordpress.org/download/" target="_blank">
+        <a class="btn btn-outline-primary d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://es.wordpress.org/latest-es_ES.zip" target="_blank">
             <i class="fab fa-wordpress"></i> Download
         </a>
     </header>
