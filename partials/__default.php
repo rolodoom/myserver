@@ -53,7 +53,7 @@
     <?php if($key == '01-Development'): ?>
     <div class="col-md-4 col-lg-4 col-xl-3 p-4 text-center">
     <?php else: ?>
-    <div class="col-md-4 col-lg-3 col-xl-2 p-4 text-center">
+    <div class="col-md-4 col-lg-3 col-xl-3 col-xxl-2 p-4 text-center">
     <?php endif; ?>
 
         <div class="card">
@@ -67,9 +67,15 @@
             </a>
             <div class="card-body">
                 <p class="card-text d-flex justify-content-between">
-                    <a href="<?php echo sprintf( '%s/%s' , $key , $keysubarray ); ?>" class="btn btn btn-outline-primary"><i class="fa fa-home"></i> Front</a>
+                    <a href="<?php echo sprintf( '%s/%s' , $key , $keysubarray ); ?>" class="btn btn btn-outline-primary">
+                        <i class="fa fa-home"></i> 
+                        <span class="d-md-none d-lg-inline-block">Front</span>
+                    </a>
                     <?php $dir=sprintf('%s/%s/public_html/wp-admin/',$key,$keysubarray); if(is_dir($dir)): ?>
-                    <a href="<?php echo $dir; ?>" class="btn btn btn-outline-primary"><i class="fa fa-lock"></i> Admin</a>
+                    <a href="<?php echo $dir; ?>" class="btn btn btn-outline-primary">
+                        <i class="fa fa-lock"></i> 
+                        <span class="d-md-none d-lg-inline-block">Admin</span>
+                    </a>
                     <?php endif; ?>
                 </p>
             </div>
