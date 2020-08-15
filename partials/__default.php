@@ -63,7 +63,7 @@
             </div>
 
             <a href="<?php echo sprintf( '%s/%s' , $key , $keysubarray ); ?>" title="<?php echo $keysubarray; ?>">
-                <img src="<?php echo get_project_thumbnail( sprintf( '%s/%s/' , $key , $keysubarray ) ); ?>" alt="<?php echo $keysubarray; ?>" class="img-fluid bg-white">
+                <img src="<?php echo get_project_thumbnail( sprintf( '%s/%s/' , $key , $keysubarray ) , $keysubarray ); ?>" alt="<?php echo $keysubarray; ?>" class="img-fluid bg-white">
             </a>
             <div class="card-body">
                 <p class="card-text d-flex justify-content-between">
@@ -73,7 +73,7 @@
                     </a>
                     <?php $dir=sprintf('%s/%s/public_html/wp-admin/',$key,$keysubarray); if(is_dir($dir)): ?>
                     <a href="<?php echo $dir; ?>" class="btn btn btn-outline-primary">
-                        <i class="fa fa-lock"></i> 
+                        <i class="fab fa-wordpress"></i> 
                         <span class="d-md-none d-lg-inline-block">Admin</span>
                     </a>
                     <?php endif; ?>

@@ -16,12 +16,12 @@ function load_content_page(){
 }
 
 
-function get_project_thumbnail( $path ){
+function get_project_thumbnail( $path, $project ){
     // return sprintf( '%s/%s/screenshot.jpg' , $key , $keysubarray );
 
     $filenamepng = $path . 'screenshot.png';
     $filenamejpg = $path . 'screenshot.jpg';
-    $defaultimg = '//placehold.it/1200x900';
+    $defaultimg = '//placehold.it/1200x900/?text=' . $project;
     
     if (file_exists($filenamepng)) {
         $thumbnail = $filenamepng ;
