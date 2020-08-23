@@ -71,12 +71,26 @@
                         <i class="fa fa-home"></i> 
                         <span class="d-md-none d-lg-inline-block">Front</span>
                     </a>
-                    <?php $dir=sprintf('%s/%s/public_html/wp-admin/',$key,$keysubarray); if(is_dir($dir)): ?>
-                    <a href="<?php echo $dir; ?>" class="btn btn btn-outline-primary">
-                        <i class="fab fa-wordpress"></i> 
-                        <span class="d-md-none d-lg-inline-block">Admin</span>
-                    </a>
-                    <?php endif; ?>
+                    <?php
+                        $admin_array = array(
+                            array( "url"=>sprintf('%s/%s/public_html/wp-admin/',$key,$keysubarray) , "cms"=>'wordpress' ),
+                            array( "url"=>sprintf('%s/%s/public_html/site/administrator',$key,$keysubarray) , "cms"=>'joomla' ),
+                            array( "url"=>sprintf('%s/%s/public_html/sitio/administrator',$key,$keysubarray) , "cms"=>'joomla' ),
+                            array( "url"=>sprintf('%s/%s/public_html/administrator',$key,$keysubarray) , "cms"=>'joomla' ),
+                        );
+                    ?>
+                    <?php foreach($admin_array as $dir): ?>
+                        <?php if( is_dir( $dir["url"] )): ?>
+
+                        <a href="<?php echo $dir['url']; ?>" class="btn btn btn-outline-primary">
+                            <i class="fab fa-<?php echo $dir['cms'] ?>"></i> 
+                            <span class="d-md-none d-lg-inline-block">Admin</span>
+                        </a>
+
+                        <?php break; endif; ?>
+                    <?php endforeach; ?>
+                    
+                    
                 </p>
             </div>
         </div>
