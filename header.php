@@ -21,6 +21,7 @@
 
         <ul class="navbar-nav ml-md-auto">
 
+            <!-- Bootstrap -->
             <li class="nav-item dropdown">
                 <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="drop-bootstrap" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fab fa-bootstrap"></i> v4.5
@@ -34,6 +35,7 @@
                 </div>
             </li>
 
+            <!-- Wordpress -->
             <li class="nav-item dropdown">
                 <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="drop-wordpress" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fab fa-wordpress"></i> v5.5
@@ -45,6 +47,19 @@
                     <a class="dropdown-item" href="https://developer.wordpress.org/themes/basics/template-hierarchy/#visual-overview" target="_blank">Template Herarchy</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="https://www.udemy.com/course-dashboard-redirect/?course_id=576054" target="_blank">Udemy</a>
+                </div>
+            </li>
+
+            <!-- Joomla -->
+            <li class="nav-item dropdown">
+                <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="drop-joomla" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fab fa-joomla"></i> v3.9.20
+                </a>
+                <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="drop-wordpress">
+                    <a class="dropdown-item" href="https://downloads.joomla.org/" target="_blank">Latest (3.9.20)</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="https://api.joomla.org/" target="_blank">API Documentation</a>
+                    <a class="dropdown-item" href="https://github.com/joomla" target="_blank">Github</a>
                 </div>
             </li>
 
@@ -61,6 +76,7 @@
             
         </ul>
 
+        <!-- Wordpress direct download -->
         <a class="btn btn-outline-primary d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://es.wordpress.org/latest-es_ES.zip" target="_blank">
             <i class="fab fa-wordpress"></i> Download
         </a>
