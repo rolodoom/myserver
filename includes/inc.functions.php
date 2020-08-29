@@ -21,12 +21,15 @@ function get_project_thumbnail( $path, $project ){
 
     $filenamepng = $path . 'screenshot.png';
     $filenamejpg = $path . 'screenshot.jpg';
+    $filenamejpg = $path . 'screenshot.svg';
     $defaultimg = '//placehold.it/1200x900/?text=' . $project;
     
     if (file_exists($filenamepng)) {
         $thumbnail = $filenamepng ;
     } elseif (file_exists($filenamejpg)) {
         $thumbnail = $filenamejpg ;
+    } elseif (file_exists($filenamesvg)) {
+        $thumbnail = $filenamesvg;
     }else{
         $thumbnail = $defaultimg;
     }
