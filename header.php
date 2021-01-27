@@ -27,7 +27,7 @@
                     <i class="fab fa-bootstrap"></i> v4.5
                 </a>
                 <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="drop-bootstrap">
-                    <a class="dropdown-item" href="https://getbootstrap.com/docs/4.5/" target="_blank">Latest (4.5.x)</a>
+                    <a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/" target="_blank">Latest (4.6)</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="https://v5.getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">v5.0.0-alpha1</a>
                     <div class="dropdown-divider"></div>
