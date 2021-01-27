@@ -29,7 +29,7 @@
                 <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="drop-bootstrap">
                     <a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/" target="_blank">Latest (4.6)</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="https://v5.getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">v5.0.0-alpha1</a>
+                    <a class="dropdown-item" href="https://v5.getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">v5.0.0-beta1</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="https://getbootstrap.com/docs/versions/" target="_blank">All versions</a>
                 </div>
@@ -38,10 +38,10 @@
             <!-- Wordpress -->
             <li class="nav-item dropdown">
                 <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="drop-wordpress" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fab fa-wordpress"></i> v5.5
+                    <i class="fab fa-wordpress"></i> v5.6
                 </a>
                 <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="drop-wordpress">
-                    <a class="dropdown-item" href="https://es.wordpress.org/download/" target="_blank">Latest (5.5)</a>
+                    <a class="dropdown-item" href="https://es.wordpress.org/download/" target="_blank">Latest (5.6)</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="https://developer.wordpress.org/" target="_blank">Developer Resources</a>
                     <a class="dropdown-item" href="https://developer.wordpress.org/themes/basics/template-hierarchy/#visual-overview" target="_blank">Template Herarchy</a>
@@ -53,10 +53,10 @@
             <!-- Joomla -->
             <li class="nav-item dropdown">
                 <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="drop-joomla" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fab fa-joomla"></i> v3.9.20
+                    <i class="fab fa-joomla"></i> v3.9.24
                 </a>
                 <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="drop-wordpress">
-                    <a class="dropdown-item" href="https://downloads.joomla.org/" target="_blank">Latest (3.9.20)</a>
+                    <a class="dropdown-item" href="https://downloads.joomla.org/" target="_blank">Latest (3.9.24)</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="https://api.joomla.org/" target="_blank">API Documentation</a>
                     <a class="dropdown-item" href="https://github.com/joomla" target="_blank">Github</a>
