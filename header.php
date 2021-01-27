@@ -77,7 +77,7 @@
         </ul>
 
         <!-- Wordpress direct download -->
-        <a class="btn btn-outline-primary d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://es.wordpress.org/latest-es_ES.zip" target="_blank">
+        <a class="btn btn-outline-primary d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://es.wordpress.org/latest-es_ES.tar.gz" target="_blank">
             <i class="fab fa-wordpress"></i> Download
         </a>
     </header>
