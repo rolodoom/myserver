@@ -24,7 +24,7 @@
             <!-- Bootstrap -->
             <li class="nav-item dropdown">
                 <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="drop-bootstrap" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fab fa-bootstrap"></i> v4.5
+                    <i class="fab fa-bootstrap"></i> v4.6
                 </a>
                 <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="drop-bootstrap">
                     <a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/" target="_blank">Latest (4.6)</a>
