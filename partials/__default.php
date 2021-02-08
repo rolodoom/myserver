@@ -60,16 +60,19 @@
     <div class="col-md-4 col-lg-3 col-xl-3 col-xxl-2 p-4 text-center">
     <?php endif; ?>
 
-        <div class="card">
+        <div class="card bg-dark">
 
-            <div class="d-md-none card-header">
-                <h4><?php echo $keysubarray; ?></h4>
+            <div class="card-header">
+                <a href="<?php echo sprintf( '%s/%s' , $key , $keysubarray ); ?>" title="<?php echo $keysubarray; ?>" class="text-primary">
+                    <?php echo $keysubarray; ?>
+                </a>
             </div>
 
             <a href="<?php echo sprintf( '%s/%s' , $key , $keysubarray ); ?>" title="<?php echo $keysubarray; ?>">
                 <img src="<?php echo get_project_thumbnail( sprintf( '%s/%s/' , $key , $keysubarray ) , $keysubarray ); ?>" alt="<?php echo $keysubarray; ?>" class="img-fluid bg-white">
             </a>
             <div class="card-body">
+                
                 <p class="card-text d-flex justify-content-between">
                     <a href="<?php echo sprintf( '%s/%s' , $key , $keysubarray ); ?>" class="btn btn-outline-primary">
                         <i class="fa fa-home"></i> 
