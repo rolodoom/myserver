@@ -55,7 +55,7 @@
     <?php foreach($mysubarray as $keysubarray): ?>
     
     <?php if($key == '01-Development'): ?>
-    <div class="col-md-4 col-lg-4 col-xl-3 p-4 text-center">
+    <div class="col-md-4 col-lg-4 col-xl-3 col-xxl-2 p-4 text-center">
     <?php else: ?>
     <div class="col-md-4 col-lg-3 col-xl-3 col-xxl-2 p-4 text-center">
     <?php endif; ?>
