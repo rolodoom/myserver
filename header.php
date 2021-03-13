@@ -38,10 +38,10 @@
             <!-- Wordpress -->
             <li class="nav-item dropdown">
                 <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="drop-wordpress" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fab fa-wordpress"></i> v5.6
+                    <i class="fab fa-wordpress"></i> v5.7
                 </a>
                 <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="drop-wordpress">
-                    <a class="dropdown-item" href="https://es.wordpress.org/download/" target="_blank">Latest (5.6)</a>
+                    <a class="dropdown-item" href="https://es.wordpress.org/download/" target="_blank">Latest (5.7)</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="https://developer.wordpress.org/" target="_blank">Developer Resources</a>
                     <a class="dropdown-item" href="https://developer.wordpress.org/themes/basics/template-hierarchy/#visual-overview" target="_blank">Template Herarchy</a>
