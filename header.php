@@ -1,5 +1,5 @@
 
-    <header class="navbar navbar-expand navbar-dark bg-dark flex-column flex-md-row fixed-top">
+    <header class="navbar navbar-expand navbar-dark bg-primary flex-column flex-md-row fixed-top">
         <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
             <i class="fa fa-terminal"></i> local<strong>host</strong>
         </a>
@@ -77,7 +77,7 @@
         </ul>
 
         <!-- Wordpress direct download -->
-        <a class="btn btn-outline-primary d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://es.wordpress.org/latest-es_ES.tar.gz" target="_blank">
+        <a class="btn btn-outline-light d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://es.wordpress.org/latest-es_ES.tar.gz" target="_blank">
             <i class="fab fa-wordpress"></i> Download
         </a>
     </header>

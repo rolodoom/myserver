@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="myserver/assets/css/style.min.css<?php echo '?date=' . time(); ?>">
+    <link rel="stylesheet" href="myserver/assets/css/style.css<?php echo '?date=' . time(); ?>">
     <link rel="stylesheet" href="myserver/assets/css/prism.min.css">
     <title>RoLo Server</title>
 
@@ -24,7 +24,10 @@ include_once('myserver/footer.php');
 ?>
 
 
-    <script type="module" src="myserver/assets/js/main.js"></script>
+    <script type="module" src="myserver/assets/js/jquery.min.js"></script>
+    <script type="module" src="myserver/assets/js/prism.min.js"></script>
+    <script type="module" src="myserver/assets/js/fawesome-all.min.js"></script>
+    <script type="module" src="myserver/assets/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

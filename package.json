@@ -3,17 +3,16 @@
   "version": "0.1.0",
   "description": "A custom theme for my Lamp Server based on Bootstrap.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "bootstrap": "^4.6.0",
+    "compile-sass": "^1.1.1",
+    "jquery": "^3.5.1"
   },
-  "keywords": [
-    "bootstrap",
-    "sass",
-    "css",
-    "javascript",
-    "starter",
-    "template"
-  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o assets/css --output-style compressed"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rolodoom/myserver.git"
@@ -23,10 +22,5 @@
   "bugs": {
     "url": "https://github.com/rolodoom/myserver/issues"
   },
-  "homepage": "https://github.com/rolodoom/myserver#readme",
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.14.0",
-    "bootstrap": "^4.5.0",
-    "jquery": "^3.5.1"
-  }
+  "homepage": "https://github.com/rolodoom/myserver#readme"
 }

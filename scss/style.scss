@@ -1,14 +1,15 @@
-// Override Bootstrap's Sass default variables
-@import "variables"; // Required
+
+// Override Bootstrap's Sass default variables from Bootswatch Theme
+@import "bootswatch/flatly/variables";
+
+// My Variables
+@import "variables";
 
 // load bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-//load fontawesome
-@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+// Override Bootstrap's Sass default bootswatch Theme
+@import "bootswatch/flatly/bootswatch";
 
 // custom
 

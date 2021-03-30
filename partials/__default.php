@@ -1,5 +1,5 @@
     
-<div class="container-fluid">
+<div class="container-fluid py-5">
 
 <?php
 
@@ -49,9 +49,9 @@
             sort($mysubarray);
 ?>
 
-<h1 class="text-center"><?php echo $key; ?></h1>
+<h1 class="text-center py-5"><?php echo $key; ?></h1>
 
-<div class="row">
+<div class="row py-3">
     <?php foreach($mysubarray as $keysubarray): ?>
     
     <?php if($key == '01-Development'): ?>
@@ -63,8 +63,8 @@
         <div class="card bg-dark">
 
             <div class="card-header">
-                <a href="<?php echo sprintf( '%s/%s' , $key , $keysubarray ); ?>" title="<?php echo $keysubarray; ?>" class="text-primary">
-                    <?php echo $keysubarray; ?>
+                <a href="<?php echo sprintf( '%s/%s' , $key , $keysubarray ); ?>" title="<?php echo $keysubarray; ?>" class="text-white">
+                    <i class="fa fa-link"></i> <?php echo $keysubarray; ?>
                 </a>
             </div>
 
@@ -74,7 +74,7 @@
             <div class="card-body">
                 
                 <p class="card-text d-flex justify-content-between">
-                    <a href="<?php echo sprintf( '%s/%s' , $key , $keysubarray ); ?>" class="btn btn-outline-primary">
+                    <a href="<?php echo sprintf( '%s/%s' , $key , $keysubarray ); ?>" class="btn btn-primary">
                         <i class="fa fa-home"></i> 
                         <span class="d-md-none d-lg-inline-block">Front</span>
                     </a>
@@ -89,7 +89,7 @@
                     <?php foreach($admin_array as $dir): ?>
                         <?php if( is_dir( $dir["url"] )): ?>
 
-                        <a href="<?php echo $dir['url']; ?>" class="btn btn-outline-primary">
+                        <a href="<?php echo $dir['url']; ?>" class="btn btn-primary">
                             <i class="fab fa-<?php echo $dir['cms'] ?>"></i> 
                             <span class="d-md-none d-lg-inline-block">Admin</span>
                         </a>
