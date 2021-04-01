@@ -12,16 +12,30 @@
 
     <?php require_once('includes/inc.favicons.php'); ?>
 
+
+    <?php
+    
+        $imagesDir = 'myserver/assets/img/backgrounds/';
+        $images = glob($imagesDir . '*.{jpg}', GLOB_BRACE);
+        $randomImage = $images[array_rand($images)]; // See comments
+    
+    ?>
+
 </head>
-<body>
+<body style="background-image: url( <?php echo $randomImage; ?> );">
 
-<?php
 
-include_once('myserver/header.php');
-include_once('myserver/content.php');
-include_once('myserver/footer.php');
+    <div class="filter">
+    
+        <?php
 
-?>
+        include_once('myserver/header.php');
+        include_once('myserver/content.php');
+        include_once('myserver/footer.php');
+
+        ?>
+    
+    </div>
 
 
     <script type="module" src="myserver/assets/js/jquery.min.js"></script>
