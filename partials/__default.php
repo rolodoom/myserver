@@ -60,7 +60,7 @@
     <div class="col-md-4 col-lg-3 col-xl-3 col-xxl-2 p-4 text-center">
     <?php endif; ?>
 
-        <div class="card bg-primary">
+        <div class="card bg-dark">
 
             <div class="card-header">
                 <a href="<?php echo sprintf( '%s/%s' , $key , $keysubarray ); ?>" title="<?php echo $keysubarray; ?>" class="text-white">
@@ -74,7 +74,7 @@
             <div class="card-body">
                 
                 <p class="card-text d-flex justify-content-between">
-                    <a href="<?php echo sprintf( '%s/%s' , $key , $keysubarray ); ?>" class="btn btn-success">
+                    <a href="<?php echo sprintf( '%s/%s' , $key , $keysubarray ); ?>" class="btn btn-outline-primary">
                         <i class="fa fa-home"></i> 
                         <span class="d-md-none d-lg-inline-block">Front</span>
                     </a>
@@ -89,7 +89,7 @@
                     <?php foreach($admin_array as $dir): ?>
                         <?php if( is_dir( $dir["url"] )): ?>
 
-                        <a href="<?php echo $dir['url']; ?>" class="btn btn-success">
+                        <a href="<?php echo $dir['url']; ?>" class="btn btn-outline-primary">
                             <i class="fab fa-<?php echo $dir['cms'] ?>"></i> 
                             <span class="d-md-none d-lg-inline-block">Admin</span>
                         </a>
@@ -136,7 +136,7 @@
         
         <div class="col-md-6 col-lg-4 col-xl-4">
 
-            <a href="<?php echo $key; ?>" class="btn btn-success btn-lg btn-block btn-drop-shadow"><?php echo $key; ?></a>
+            <a href="<?php echo $key; ?>" class="btn btn-primary btn-lg btn-block btn-drop-shadow"><?php echo $key; ?></a>
 
             <?php /*
             <div class="border border-dark mt-3 mb-3 mt-xl-0">

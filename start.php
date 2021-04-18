@@ -13,28 +13,18 @@
     <?php require_once('includes/inc.favicons.php'); ?>
 
 
-    <?php
-    
-        $imagesDir = 'myserver/assets/img/backgrounds/';
-        $images = glob($imagesDir . '*.{jpg}', GLOB_BRACE);
-        $randomImage = $images[array_rand($images)]; // See comments
-    
-    ?>
-
 </head>
-<body style="background-image: url( <?php echo $randomImage; ?> );">
+<body>
 
 
-    <div class="filter">
-    
+    <div class="my-5">
         <?php
-
+    
         include_once('myserver/header.php');
         include_once('myserver/content.php');
         include_once('myserver/footer.php');
-
-        ?>
     
+        ?>
     </div>
 
 

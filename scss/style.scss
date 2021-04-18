@@ -1,6 +1,6 @@
 
 // Override Bootstrap's Sass default variables from Bootswatch Theme
-@import "bootswatch/flatly/variables";
+@import "bootswatch/solar/variables";
 
 // My Variables
 @import "variables";
@@ -9,7 +9,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Override Bootstrap's Sass default bootswatch Theme
-@import "bootswatch/flatly/bootswatch";
+@import "bootswatch/solar/bootswatch";
 
 // custom
 
@@ -21,27 +21,17 @@
     -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); 
 }
 
+$filter: true;
+
 body{
     padding:0; margin:0;
     background-size: cover;
     background-attachment: fixed;
 
-    .filter{
-        padding-top:160px;
-        backdrop-filter: grayscale(1) blur(10px);
-        background-color: rgba(255,255,255,0.6);
-    }
-
     .card{
-        border:1px solid $primary !important;
         @include drop-shadow;
     }
 
-    @media screen and (min-width:768px){
-        .filter{
-            padding-top:80px;
-        }
-    }
 }
 
 
