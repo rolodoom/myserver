@@ -136,7 +136,7 @@
         
         <div class="col-md-6 col-lg-4 col-xl-4">
 
-            <a href="<?php echo $key; ?>" class="btn btn-primary btn-lg btn-block btn-drop-shadow"><?php echo $key; ?></a>
+            <a href="<?php echo $key; ?>" class="btn btn-outline-success btn-lg btn-block btn-drop-shadow"><?php echo $key; ?></a>
 
             <?php /*
             <div class="border border-dark mt-3 mb-3 mt-xl-0">
