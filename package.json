@@ -6,8 +6,11 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
     "bootstrap": "^4.6.0",
+    "hosted-git-info": ">=2.8.9"
+  },
+  "devDependencies": {
     "compile-sass": "^1.1.1",
-    "jquery": "^3.5.1"
+    "hosted-git-info": ">=2.8.9"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
