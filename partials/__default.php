@@ -63,7 +63,7 @@
         <div class="card bg-dark">
 
             <div class="card-header">
-                <a href="<?php echo sprintf( '%s/%s' , $key , $keysubarray ); ?>" title="<?php echo $keysubarray; ?>" class="text-white">
+                <a href="<?php echo sprintf( '%s/%s' , $key , $keysubarray ); ?>" title="<?php echo $keysubarray; ?>" class="text-white small">
                     <i class="fa fa-link"></i> <?php echo $keysubarray; ?>
                 </a>
             </div>
