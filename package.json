@@ -1,16 +1,11 @@
 {
   "name": "myserver",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A custom theme for my Lamp Server based on Bootstrap.",
   "main": "index.js",
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.14.0",
-    "bootstrap": "^4.6.0",
-    "hosted-git-info": ">=2.8.9"
-  },
   "devDependencies": {
-    "compile-sass": "^1.1.1",
-    "hosted-git-info": ">=2.8.9"
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "bootstrap": "^4.6.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
