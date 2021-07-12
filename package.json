@@ -1,24 +1,23 @@
 {
-  "name": "myserver",
-  "version": "0.2.0",
-  "description": "A custom theme for my Lamp Server based on Bootstrap.",
-  "main": "index.js",
-  "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.14.0",
-    "bootstrap": "^4.6.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch scss -o assets/css --output-style compressed"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rolodoom/myserver.git"
-  },
-  "author": "RoLo",
-  "license": "GPL-2.0-or-later",
-  "bugs": {
-    "url": "https://github.com/rolodoom/myserver/issues"
-  },
-  "homepage": "https://github.com/rolodoom/myserver#readme"
+	"name": "myserver",
+	"version": "0.2.0",
+	"description": "A custom theme for my Lamp Server based on Bootstrap.",
+	"main": "index.js",
+	"devDependencies": {
+		"bootstrap": "^4.6.0"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"scss": "node-sass --watch scss -o assets/css --output-style compressed"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rolodoom/myserver.git"
+	},
+	"author": "RoLo",
+	"license": "GPL-2.0-or-later",
+	"bugs": {
+		"url": "https://github.com/rolodoom/myserver/issues"
+	},
+	"homepage": "https://github.com/rolodoom/myserver#readme"
 }
